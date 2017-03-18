@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "307103939210",
+    "firebase_url": "https://sabang-17.firebaseio.com",
+    "project_id": "sabang-17",
+    "storage_bucket": "sabang-17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307103939210:android:5dfa4c8e2e266825",
+        "android_client_info": {
+          "package_name": "com.buahbatu.sabang17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307103939210-bf9kk225t63okjq1s3mh1j23bme79lib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.buahbatu.sabang17",
+            "certificate_hash": "1b9d33b80ec4ca3c1e8ded52501ea4eef2209534"
+          }
+        },
+        {
+          "client_id": "307103939210-9ke9esktob80cgnus2q0mhsd654s0qde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgAmkz8Jg4o4mcoGi2RzaUqr5d5i2Q2SI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307103939210-9ke9esktob80cgnus2q0mhsd654s0qde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

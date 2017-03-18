@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00873A</color>
+    <color name="colorPrimaryDark">#1F1A17</color>
+    <color name="colorAccent">#ECD444</color>
+    <color name="colorAccentDarker">#C1A91B</color>
+    <color name="colorWhite">#FFF</color>
+
+    <!--EVENT COLOR-->
+    <color name="colorCadre">#9B1D20</color>
+    <color name="colorNews">#2E86AB</color>
+    <color name="colorEvent">#1E152A</color>
+
+    <!--BAR COLOR-->
+    <color name="colorBar">#cacaca</color>
+</resources>

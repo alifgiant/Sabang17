@@ -1,0 +1,3 @@
+Key store password: motion2017
+Key alias: Motion-2017
+key password: motion2017
