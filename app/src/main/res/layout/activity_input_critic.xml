@@ -9,30 +9,30 @@
     tools:context="com.buahbatu.sabang17.InputCriticActivity">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/critic_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/critic_name"
             android:hint="@string/critic_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/critic_origin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/critic_origin"
             android:hint="@string/critic_origin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/critic_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/critic_contact"
             android:hint="@string/critic_contact"
             android:inputType="number"
             android:layout_width="match_parent"
@@ -40,11 +40,11 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/critic_message"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/critic_message"
             android:hint="@string/critic_message"
             android:minLines="5"
             android:maxLines="8"

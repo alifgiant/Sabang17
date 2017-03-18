@@ -1,23 +1,37 @@
 package com.buahbatu.sabang17.model;
 
-import java.util.Random;
-
-/**
- * Created by maakbar on 3/17/17.
- */
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.Exclude;
 
 public class Message {
-    public static int SELF = 0;
-    public static int OTHER = 1;
+    @Exclude
+    public static final int SELF = 0;
+    @Exclude
+    public static final int OTHER = 1;
+    @Exclude
+    public String key;
 
-    private int viewType;
+    public String messageSource;
+    public String text;
+    public String timestamp;
+
 
     public Message() {
-        Random random = new Random();
-        this.viewType = random.nextInt(2);;
+        // Default constructor required for calls to DataSnapshot.getValue(Message.class)
     }
 
-    public int getViewType() {
-        return viewType;
+    public Message(String messageSource, String text) {
+        this.messageSource = messageSource;
+        this.text = text;
+
+        /*Temporary timestamp format, remove after FIREBASE FUNCTION GENERATED*/
+        Long tsLong = System.currentTimeMillis();
+        this.timestamp = tsLong.toString();
+    }
+
+    public static Message createMessageObject(DataSnapshot dataSnapshot){
+        Message message = dataSnapshot.getValue(Message.class);
+        message.key = dataSnapshot.getKey();
+        return message;
     }
 }

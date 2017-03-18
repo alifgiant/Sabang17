@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/activity_horizontal_margin">
+        android:padding="8dp">
         <TextView
-            android:id="@+id/critic_title"
+            android:id="@+id/critic_message"
             style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
             android:text="@string/app_name"
+            android:maxLines="1"
+            android:ellipsize="end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:id="@+id/critic_last_message"
+            android:id="@+id/critic_name"
+            android:layout_marginTop="4dp"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+            android:text="@string/app_name"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/critic_origin"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
             android:text="@string/app_name"
             android:maxLines="1"

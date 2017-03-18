@@ -9,9 +9,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
-
 import com.buahbatu.sabang17.fragments.BusinessFragment;
 import com.buahbatu.sabang17.fragments.CreditFragment;
 import com.buahbatu.sabang17.fragments.CriticFragment;

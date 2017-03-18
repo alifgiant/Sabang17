@@ -24,6 +24,7 @@
     <string name="critic_message">Isi kritik / saran</string>
     <string name="critic_reply">Balasan anda</string>
     <string name="critic_submit">Kirim</string>
+    <string name="critic_field_empty">Kolom tidak boleh kosong</string>
 
     <!--SCHEDULE PAGE-->
     <string name="month">Bulan</string>
