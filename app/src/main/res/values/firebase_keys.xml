@@ -2,4 +2,8 @@
 <resources>
     <string name="critic_key">aspiration</string>
     <string name="conversation_key">conversation</string>
+    <string name="opinion_key">opinion</string>
+    <string name="event_key">event</string>
+    <string name="cadre_key">cadre</string>
+    <string name="business_key">business</string>
 </resources>

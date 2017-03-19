@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:context="com.buahbatu.sabang17.InfoDetailActivity">
+        android:orientation="vertical">
         <ImageView
+            android:id="@+id/item_image"
             android:contentDescription="@string/info_image"
             android:src="@drawable/hmi_logo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="450dp" />
         <TextView
             android:id="@+id/item_name"
             android:paddingTop="6dp"
@@ -27,20 +24,32 @@
             android:ellipsize="end"
             android:text="@string/app_name"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.4"/>
+            android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/item_detail"
+            android:id="@+id/item_price"
+            android:paddingTop="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="3dp"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_marginTop="12dp"
             android:paddingTop="3dp"
             android:paddingBottom="6dp"
             android:paddingLeft="6dp"
             android:paddingRight="6dp"
             style="@style/AlertDialog.AppCompat.Light"
+            android:autoLink="all"
             android:text="@string/app_name"
             android:maxLines="2"
             android:ellipsize="end"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.6"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </ScrollView>

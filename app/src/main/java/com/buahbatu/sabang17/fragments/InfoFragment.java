@@ -50,9 +50,9 @@ public class InfoFragment extends Fragment {
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position){
-                case 0: return "Berita";
-                case 1: return "Kegiatan";
-                case 2: return "Kaderisasi";
+                case 0: return "Opini";
+                case 1: return "Kaderisasi";
+                case 2: return "Kegiatan";
                 default: return "";
             }
         }
@@ -60,9 +60,9 @@ public class InfoFragment extends Fragment {
         InfoPagerAdapter(FragmentManager fm) {
             super(fm);
             infoFragmentList = new ArrayList<>();
-            infoFragmentList.add(InfoChildFragment.newInstance("Berita"));
-            infoFragmentList.add(InfoChildFragment.newInstance("Kegiatan"));
-            infoFragmentList.add(InfoChildFragment.newInstance("Kaderisasi"));
+            infoFragmentList.add(InfoChildFragment.newInstance("opinion"));
+            infoFragmentList.add(InfoChildFragment.newInstance("cadre"));
+            infoFragmentList.add(InfoChildFragment.newInstance("event"));
         }
 
         @Override
