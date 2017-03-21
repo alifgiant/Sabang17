@@ -39,6 +39,7 @@ public class CriticFragment extends Fragment {
     public static final String CONVERSATION_KEY = "key";
     public static final String CONVERSATION_NAME_KEY = "name";
     public static final String CONVERSATION_ORIGIN_KEY = "origin";
+
     private static final String TAG = CriticFragment.class.getSimpleName();
     private static final int rowDistance = 8;
 

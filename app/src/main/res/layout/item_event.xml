@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:weightSum="1">
         <TextView
+            android:id="@+id/item_time"
             android:paddingTop="6dp"
             android:paddingBottom="6dp"
             android:paddingLeft="6dp"
@@ -27,35 +28,41 @@
             android:layout_width="0dp"
             android:layout_weight="0.2"
             android:layout_height="wrap_content" />
-
         <LinearLayout
             android:paddingTop="6dp"
             android:paddingBottom="6dp"
             android:layout_width="0dp"
-            android:layout_weight="0.6"
+            android:layout_weight="0.55"
             android:orientation="vertical"
             android:layout_height="match_parent">
             <TextView
+                android:id="@id/item_title"
                 android:textColor="@color/colorWhite"
                 android:textSize="18sp"
                 android:text="@string/app_name"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
+                android:id="@id/item_organizer"
                 android:textColor="@color/colorWhite"
                 style="@style/TextAppearance.AppCompat"
                 android:text="@string/app_name"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <TextView
+            android:id="@+id/item_type"
             android:background="@color/colorCadre"
             android:textColor="@color/colorWhite"
             android:gravity="center"
             style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
             android:text="Kader"
             android:layout_width="0dp"
-            android:layout_weight="0.2"
+            android:layout_weight="0.25"
             android:layout_height="match_parent" />
     </LinearLayout>
 </android.support.v7.widget.CardView>

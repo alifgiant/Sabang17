@@ -73,12 +73,12 @@ public class InfoChildFragment extends Fragment {
                     if (TextUtils.equals(data.key, info.key)){
                         Log.i(TAG, "onMessageSame found");
                         data.title = info.title;
-                        data.startDate = info.startDate;
-                        data.endDate = info.endDate;
+                        data.date_start = info.date_start;
+                        data.date_end = info.date_end;
                         data.desc = info.desc;
                         data.organizer = info.organizer;
-                        data.startTime = info.startTime;
-                        data.endTime = info.endTime;
+                        data.time_start = info.time_start;
+                        data.time_end = info.time_end;
                         mInfoRecycler.getAdapter().notifyDataSetChanged();
                         break;
                     }

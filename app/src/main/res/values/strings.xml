@@ -2,7 +2,7 @@
     <string name="app_name">Sabang 17</string>
     <string name="title_home">Info</string>
     <string name="title_event">Kegiatan</string>
-    <string name="title_cadre">Pengakaderan</string>
+    <string name="title_cadre">Kaderisasi</string>
     <string name="title_schedule">Jadwal</string>
     <string name="title_business">Wirausaha</string>
     <string name="title_critics">Aspirasi</string>
@@ -37,7 +37,7 @@
     <string name="about_content">\"Sabang 17\" merupakan aplikasi berbasis android yang dikembangkan
         oleh bidang litbang HMI cabang Bandung. Besar harapan aplikasi ini dapat menjadi sumbangsih
         bagi kader-kader sewilayah kerja HMI cabang Bandung. Kami menyadari masih terdapat banyak
-        kekurangan dari aplikasi ini. Maka dari itu kami mengharapkanmasukan yang membangun untuk
+        kekurangan dari aplikasi ini. Maka dari itu kami mengharapkan masukan yang membangun untuk
         perbaikan aplikasi ini kedepannya</string>
     <string name="salute">Hormat Kami,</string>
     <string name="person_in_charge">Aidil Afdan Pananrang</string>

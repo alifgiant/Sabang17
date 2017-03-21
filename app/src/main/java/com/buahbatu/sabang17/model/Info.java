@@ -10,25 +10,25 @@ public class Info implements Serializable{
     public String key;
 
     public String title;
-    public String startDate;
-    public String endDate;
+    public String date_start;
+    public String date_end;
     public String desc;
     public String organizer;
-    public String startTime;
-    public String endTime;
+    public String time_start;
+    public String time_end;
 
-    public Info() {
+    Info() {
         // Default constructor required for calls to DataSnapshot.getValue(Info.class)
     }
 
-    public Info(String title, String startDate, String endDate, String desc, String organizer, String startTime, String endTime) {
+    public Info(String title, String date_start, String date_end, String desc, String organizer, String time_start, String time_end) {
         this.title = title;
-        this.startDate = startDate;
-        this.endDate = endDate;
+        this.date_start = date_start;
+        this.date_end = date_end;
         this.desc = desc;
         this.organizer = organizer;
-        this.startTime = startTime;
-        this.endTime = endTime;
+        this.time_start = time_start;
+        this.time_end = time_end;
     }
 
     public static Info createInfoObject (DataSnapshot dataSnapshot){

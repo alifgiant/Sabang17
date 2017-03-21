@@ -4,6 +4,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,19 +32,19 @@ public class InfoDetailActivity extends AppCompatActivity {
     private void setupViews(String infoType, Info data){
         mItemTitle.setText(data.title);
         mItemOrganizer.setText(data.organizer);
-        if (!TextUtils.isEmpty(data.startDate)){
-            String date = data.startDate;
-            if (!TextUtils.isEmpty(data.endDate)){
-                date += " - " + data.endDate;
+        if (!TextUtils.isEmpty(data.date_start)){
+            String date = data.date_start;
+            if (!TextUtils.isEmpty(data.date_end)){
+                date += " s.d " + data.date_end;
             }
             mItemDate.setText(date);
         }else {
             mItemDate.setVisibility(View.GONE);
         }
-        if (!TextUtils.isEmpty(data.startTime)){
-            String time = data.startTime;
-            if (!TextUtils.isEmpty(data.endTime)){
-                time += " - " + data.endTime;
+        if (!TextUtils.isEmpty(data.time_start)){
+            String time = data.time_start;
+            if (!TextUtils.isEmpty(data.time_end)){
+                time += " s.d " + data.time_end;
             }
             mItemTime.setText(time);
         }else {

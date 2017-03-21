@@ -6,4 +6,5 @@
     <string name="event_key">event</string>
     <string name="cadre_key">cadre</string>
     <string name="business_key">business</string>
+    <string name="calendar_key">calendar</string>
 </resources>
