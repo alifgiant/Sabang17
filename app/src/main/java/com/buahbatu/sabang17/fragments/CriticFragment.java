@@ -71,7 +71,7 @@ public class CriticFragment extends Fragment {
     private void populateData (int stop){
         Log.i(TAG, "populateData begin: ");
 
-        criticsRef.orderByChild("message").limitToFirst(rowDistance).addChildEventListener(new CustomChildEventListener() {
+        criticsRef.orderByChild("message").addChildEventListener(new CustomChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
                 Log.i(TAG, "onCriticChildAdded: "+dataSnapshot.getKey());
@@ -194,7 +194,8 @@ public class CriticFragment extends Fragment {
                     moveIntent.putExtra(CONVERSATION_KEY, data.key);
                     moveIntent.putExtra(CONVERSATION_NAME_KEY, data.name);
                     moveIntent.putExtra(CONVERSATION_ORIGIN_KEY, data.origin);
-                    startActivity(moveIntent);
+                    // cancel first
+//                    startActivity(moveIntent);
                 }
             });
         }

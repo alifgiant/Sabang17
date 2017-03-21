@@ -46,7 +46,7 @@ public class CriticDetailActivity extends AppCompatActivity{
     FirebaseUser user;
 
     private void populateChat(int stop){
-        conversationRef.orderByChild("timestamp").limitToLast(rowDistance).addChildEventListener(new CustomChildEventListener() {
+        conversationRef.orderByChild("timestamp").addChildEventListener(new CustomChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
                 Log.i(TAG, "onMessageAdded: "+dataSnapshot.getKey());

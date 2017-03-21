@@ -46,7 +46,7 @@ public class BusinessFragment extends Fragment {
     private DatabaseReference businessesReference;
 
     private void populateChat(int stop){
-        businessesReference.limitToFirst(stop).addChildEventListener(new CustomChildEventListener() {
+        businessesReference.addChildEventListener(new CustomChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
                 Log.i(TAG, "onBusinessAdded: "+dataSnapshot.getKey());

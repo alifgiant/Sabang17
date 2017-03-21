@@ -49,7 +49,7 @@ public class InfoChildFragment extends Fragment {
     private DatabaseReference informationReference;
 
     private void populateChat(int stop){
-        informationReference.limitToFirst(stop).addChildEventListener(new CustomChildEventListener() {
+        informationReference.addChildEventListener(new CustomChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
                 Log.i(TAG, "onInfoAdded: "+dataSnapshot.getKey());
