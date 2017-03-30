@@ -51,17 +51,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <TextView
-            android:layout_marginTop="16dp"
-            android:text="@string/partner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:layout_marginTop="12dp"
-            android:contentDescription="@string/motion_logo"
-            android:src="@drawable/motion_logo"
-            android:layout_width="match_parent"
-            android:layout_height="80dp" />
     </LinearLayout>
 </ScrollView>
