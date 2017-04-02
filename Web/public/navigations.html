@@ -1,0 +1,225 @@
+<script>
+    if (typeof $ === 'undefined') {
+        window.location.href = "index.html";
+    }
+</script>
+<!--
+**********************************************************************************************************************************************************
+TOP BAR CONTENT & NOTIFICATIONS
+***********************************************************************************************************************************************************
+-->
+<!--header start-->
+<header class="header black-bg">
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+    </div>
+    <!--logo start-->
+    <a href="index.html" class="logo"><b>Sabang 17</b></a>
+    <!--logo end-->
+    <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+            <!-- inbox dropdown start-->
+            <li id="header_inbox_bar" class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-theme">5</span>
+                </a>
+                <ul class="dropdown-menu extended inbox">
+                    <div class="notify-arrow notify-arrow-green"></div>
+                    <li>
+                        <p class="green">You have 5 new messages</p>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
+                            <span class="subject">
+                                    <span class="from">Zac Snider</span>
+                                    <span class="time">Just now</span>
+                                    </span>
+                            <span class="message">
+                                        Hi mate, how is everything?
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
+                            <span class="subject">
+                                    <span class="from">Divya Manian</span>
+                                    <span class="time">40 mins.</span>
+                                    </span>
+                            <span class="message">
+                                     Hi, I need your help with this.
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
+                            <span class="subject">
+                                    <span class="from">Dan Rogers</span>
+                                    <span class="time">2 hrs.</span>
+                                    </span>
+                            <span class="message">
+                                        Love your new Dashboard.
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">
+                            <span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
+                            <span class="subject">
+                                    <span class="from">Dj Sherman</span>
+                                    <span class="time">4 hrs.</span>
+                                    </span>
+                            <span class="message">
+                                        Please, answer asap.
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#">See all messages</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- inbox dropdown end -->
+        </ul>
+        <!--  notification end -->
+    </div>
+    <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+            <li><a class="logout">Logout</a></li>
+        </ul>
+    </div>
+</header>
+<!--header end-->
+
+<!-- **********************************************************************************************************************************************************
+MAIN SIDEBAR MENU
+*********************************************************************************************************************************************************** -->
+<!--sidebar start-->
+<aside>
+    <div id="sidebar"  class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+
+            <p class="centered"><a href="profile.html"><img id="user_image" src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+            <h5 class="centered" id="username">Marcel Newman</h5>
+
+            <li class="sub-menu">
+                <a class="active" onclick="loadMenu('dashboard', '', this)" >
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="sub-menu">
+                <a onclick="loadMenu('event', '', this)" >
+                    <i class="fa fa-calendar"></i>
+                    <span>Kegiatan</span>
+                </a>
+                <ul class="sub">
+                    <li><a onclick="loadMenu('event', 'add')" >Tambah Kegiatan</a></li>
+                    <li><a onclick="loadMenu('event', 'detail')" >Lihat Kegiatan</a></li>
+                </ul>
+            </li>
+
+            <li class="sub-menu">
+                <a onclick="loadMenu('cadre', '', this)">
+                    <i class="fa fa-users"></i>
+                    <span>Kaderisasi</span>
+                </a>
+                <ul class="sub">
+                    <li><a onclick="loadMenu('cadre', 'add', this)">Tambah Kaderisasi</a></li>
+                    <li><a onclick="loadMenu('cadre', 'detail', this)">Lihat Kaderisasi</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a onclick="loadMenu('opinion', '', this)">
+                    <i class="fa fa-book"></i>
+                    <span>Berita dan Opini</span>
+                </a>
+                <ul class="sub">
+                    <li><a onclick="loadMenu('opinion', 'add', this)">Tulis Berita / Opini</a></li>
+                    <li><a onclick="loadMenu('opinion', 'detail', this)">Lihat Berita / Opini</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a onclick="loadMenu('business', '', this)" >
+                    <i class="fa fa-shopping-bag"></i>
+                    <span>Wirausaha</span>
+                </a>
+                <ul class="sub">
+                    <li><a onclick="loadMenu('business', 'add', this)">Tambah Jualan</a></li>
+                    <li><a onclick="loadMenu('business', 'detail', this)">Lihat Jualan</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a onclick="loadMenu('aspiration', '', this)">
+                    <i class="fa fa-comments-o"></i>
+                    <span>Aspirasi</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a onclick="loadMenu('credit', '', this)" >
+                    <i class=" fa fa-info-circle"></i>
+                    <span>Tentang</span>
+                </a>
+            </li>
+
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+
+<!--sidebar script for all pages-->
+<script>
+    //    sidebar toggle
+    $(function() {
+        function responsiveView() {
+            var wSize = $(window).width();
+            if (wSize <= 768) {
+                $('#container').addClass('sidebar-close');
+                $('#sidebar > ul').hide();
+            }
+
+            if (wSize > 768) {
+                $('#container').removeClass('sidebar-close');
+                $('#sidebar > ul').show();
+            }
+        }
+        $(window).on('load', responsiveView);
+        $(window).on('resize', responsiveView);
+    });
+
+    $('.fa-bars').click(function () {
+        if ($('#sidebar > ul').is(":visible") === true) {
+            $('#main-content').css({
+                'margin-left': '0px'
+            });
+            $('#sidebar').css({
+                'margin-left': '-210px'
+            });
+            $('#sidebar > ul').hide();
+            $("#container").addClass("sidebar-closed");
+        } else {
+            $('#main-content').css({
+                'margin-left': '210px'
+            });
+            $('#sidebar > ul').show();
+            $('#sidebar').css({
+                'margin-left': '0'
+            });
+            $("#container").removeClass("sidebar-closed");
+        }
+    });
+    // widget tools
+</script>
+<!--LOGOUT SCRIPT-->
+<script>
+    $('.logout').click(function () {
+        firebase.auth().signOut();
+    });
+</script>

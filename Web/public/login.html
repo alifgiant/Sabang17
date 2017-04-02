@@ -1,0 +1,105 @@
+<script>
+    if (typeof $ === 'undefined') {
+        window.location.href = "index.html";
+    }
+</script>
+<!-- **********************************************************************************************************************************************************
+MAIN CONTENT
+*********************************************************************************************************************************************************** -->
+<div id="login-page">
+    <div class="container">
+
+        <form class="form-login">
+            <h2 class="form-login-heading">sign in now</h2>
+            <div class="login-wrap">
+                <div>
+                    <input id="user_id" type="text" class="form-control" placeholder="User ID" autofocus>
+                </div>
+                <br>
+                <div>
+                    <input id="user_pass" type="password" class="form-control" placeholder="Password">
+                </div>
+                <label class="checkbox"></label>
+                <a class="btn btn-theme btn-block" id="sign_button">
+                    <div id="sign_button_idle">
+                        <span class="fa fa-lock"></span> SIGN IN
+                    </div>
+                    <div id="sign_button_loading" class="hidden">
+                        <span class="glyphicon glyphicon-refresh spinning"></span> Loading...
+                    </div>
+                </a>
+                <br>
+                <div id="alert_view"  class="alert alert-danger hidden" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                    <label id="error_text">User Id or Password is wrong</label>
+                </div>
+                <hr>
+                <div class="login-social-link centered">
+                    <p>Please Contact Admin To Get Access</p>
+                    <a class="btn btn-facebook" href="https://www.facebook.com/aidilpananrang"><i class="fa fa-facebook"></i> Facebook</a>
+                    <a class="btn btn-instagram" href="https://www.instagram.com/aidilpananrang/"><i class="fa fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!--LOGIN SCRIPT-->
+<script>
+    var button_sign_idle = $('#sign_button_idle');
+    var button_sign_loading = $('#sign_button_loading');
+    $('#sign_button').click(function() {
+        var user_id_input = $('#user_id');
+        var user_pass_input = $('#user_pass');
+        var alert_view = $('#alert_view');
+        var error_text = $('#error_text');
+
+        user_id_input.parent().removeClass('has-error');
+        user_pass_input.parent().removeClass('has-error');
+
+        alert_view.addClass('hidden');
+
+        if (user_id_input.val().length === 0){
+            user_id_input.parent().addClass('has-error');
+        }else if (user_pass_input.val().length === 0){
+            user_pass_input.parent().addClass('has-error');
+        }else {
+            button_sign_idle.addClass('hidden');
+            button_sign_loading.removeClass('hidden');
+
+            var id = user_id_input.val() + '@sabang-17.firebaseapp.com';
+            var pass = user_pass_input.val();
+
+            firebase.auth().signInWithEmailAndPassword(id, pass).catch(function(error) {
+                var errorCode = error.code;
+
+                if (errorCode === 'auth/user-not-found'){
+                    error_text.text('User id is not registered');
+                }else {
+                    error_text.text('Wrong password');
+                }
+
+                alert_view.removeClass('hidden');
+
+                button_sign_idle.removeClass('hidden');
+                button_sign_loading.addClass('hidden');
+            });
+        }
+    });
+    $('#user_id').keypress(function (e) {
+        var key = e.which;
+        if(key == 13)  // the enter key code
+        {
+            $('#sign_button').click();
+        }
+    });
+    $('#user_pass').keypress(function (e) {
+        var key = e.which;
+        if(key == 13)  // the enter key code
+        {
+            $('#sign_button').click();
+        }
+    });
+</script>
