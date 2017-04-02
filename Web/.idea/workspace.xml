@@ -2,104 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a45daa22-e416-439f-aee9-6a812a53bcd4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cadre/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cadre/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/event/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/event/detail.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Android Dev Read" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MotionLab-Alif.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/google-services.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/androidTest/java/com/buahbatu/sabang17/ExampleInstrumentedTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/ic_launcher_hmi-web.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/BusinessDetailActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/CriticDetailActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/InfoDetailActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/InputCriticActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/SplashActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/firebase/CustomChildEventListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/firebase/CustomFirebaseImageLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/fragments/BusinessFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/fragments/CreditFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/fragments/CriticFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/fragments/InfoChildFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/fragments/InfoFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/fragments/TimeFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/model/Business.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/model/Critic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/model/Info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/model/Message.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/java/com/buahbatu/sabang17/model/SabangEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/background_splash.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/hmi_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_add_white_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_business_center_black_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_cadre_black_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_critics_black_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_developer_mode_black_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_event_black_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_home_black_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_no_image_grey_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_send_white_24dp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/motion_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/yellow_button_background_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_business_detail.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_critic_detail.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_info_detail.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_input_critic.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_business.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_credit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_critic.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_info.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_info_child.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_time.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/item_business.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/item_critics.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/item_event.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/item_info.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/item_response_other.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/layout/item_response_self.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/menu/navigation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher_hmi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher_hmi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher_hmi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher_hmi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher_hmi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/values/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/values/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/values/firebase_keys.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../app/src/test/java/com/buahbatu/sabang17/ExampleUnitTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings.gradle" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/aspiration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/business/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/business/detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/credits.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/opinion/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/opinion/detail.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/form.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/login.html" afterPath="$PROJECT_DIR$/public/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/sabang-app.js" afterPath="$PROJECT_DIR$/public/assets/js/sabang-app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/cadre/add.html" afterPath="$PROJECT_DIR$/public/cadre/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/cadre/detail.html" afterPath="$PROJECT_DIR$/public/cadre/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dashboard.html" afterPath="$PROJECT_DIR$/public/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/event/add.html" afterPath="$PROJECT_DIR$/public/event/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/event/detail.html" afterPath="$PROJECT_DIR$/public/event/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/navigations.html" afterPath="$PROJECT_DIR$/public/navigations.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -114,11 +33,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/cadre/add.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="218">
+              <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -171,12 +90,20 @@
         <option value="$PROJECT_DIR$/public/form.html" />
         <option value="$PROJECT_DIR$/public/assets/js/sabangapp.js" />
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/public/assets/js/common-scripts.js" />
+        <option value="$PROJECT_DIR$/public/login.html" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/aspiration.html" />
+        <option value="$PROJECT_DIR$/public/credits.html" />
         <option value="$PROJECT_DIR$/public/dashboard.html" />
         <option value="$PROJECT_DIR$/public/assets/js/sabang-app.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/assets/js/common-scripts.js" />
+        <option value="$PROJECT_DIR$/public/opinion/add.html" />
+        <option value="$PROJECT_DIR$/public/opinion/detail.html" />
         <option value="$PROJECT_DIR$/public/navigations.html" />
-        <option value="$PROJECT_DIR$/public/login.html" />
+        <option value="$PROJECT_DIR$/public/business/add.html" />
+        <option value="$PROJECT_DIR$/public/business/detail.html" />
+        <option value="$PROJECT_DIR$/public/cadre/add.html" />
+        <option value="$PROJECT_DIR$/public/cadre/detail.html" />
         <option value="$PROJECT_DIR$/public/event/add.html" />
         <option value="$PROJECT_DIR$/public/event/detail.html" />
       </list>
@@ -249,7 +176,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="opinion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cadre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,18 +352,18 @@
       <updated>1491045858675</updated>
       <workItem from="1491045860663" duration="26143000" />
       <workItem from="1491137153705" duration="2256000" />
-      <workItem from="1491140201543" duration="1302000" />
+      <workItem from="1491140201543" duration="4193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29701000" />
+    <option name="totallyTimeSpent" value="32592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18615042" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17944899" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -497,6 +478,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#10;n#div#1;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#10;n#div#1;n#div#0;n#section#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -586,45 +571,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="537" column="0" lean-forward="true" selection-start-line="537" selection-start-column="0" selection-end-line="537" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1116">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/sabang-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/navigations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="196" column="37" lean-forward="false" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="37" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#header#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/common-scripts.js" />
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.firebaserc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -635,32 +586,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="97" column="45" lean-forward="false" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
+        <state relative-caret-position="-270">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/event/detail.html">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/sabang-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="198">
+          <caret line="65" column="35" lean-forward="true" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/event/add.html">
+    <entry file="file://$PROJECT_DIR$/public/opinion/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="202" column="22" lean-forward="false" selection-start-line="202" selection-start-column="16" selection-end-line="202" selection-end-column="22" />
+          <folding>
+            <element signature="e#6191#6198#0" expanded="true" />
+            <element signature="e#6510#6517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/opinion/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="244" column="27" lean-forward="false" selection-start-line="244" selection-start-column="27" selection-end-line="244" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/navigations.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <caret line="4" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <element signature="n#ul#0;n#div#1;n#header#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/business/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/cadre/add.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <element signature="e#6297#6304#0" expanded="true" />
+            <element signature="e#6616#6623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/business/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <element signature="e#6297#6304#0" expanded="true" />
+            <element signature="e#6616#6623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/event/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#6297#6304#0" expanded="true" />
+            <element signature="e#6616#6623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/event/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cadre/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/aspiration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="372" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/credits.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
           <folding />
         </state>
       </provider>

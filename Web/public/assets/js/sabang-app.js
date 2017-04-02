@@ -7,21 +7,49 @@
 
 function loadMenu(menu, child_menu, element_menu) {
     if (!child_menu) {
-        $('.sub-menu').removeClass("active");
-        $('.sub-menu').find('a').removeClass("active");
+        var submenus = $('.sub-menu');
+        submenus.removeClass("active");
+        submenus.find('a').removeClass("active");
 
         $(element_menu).parent().addClass("active");
         $(element_menu).addClass("active");
     }
 
+    var main_content_holder = $('#main-content');
+
     console.log(menu, child_menu);
     switch (menu){
-        case 'dashboard': break;
-        case 'event': break;
-        case 'cadre': break;
-        case 'opinion': break;
-        case 'business': break;
-        case 'aspiration': break;
+        case 'dashboard':
+            main_content_holder.load('dashboard.html');
+            break;
+        case 'event':
+            if (child_menu === 'add')
+                main_content_holder.load('event/add.html');
+            else if (child_menu === 'detail')
+                main_content_holder.load('event/detail.html');
+            break;
+        case 'cadre':
+            if (child_menu === 'add')
+                main_content_holder.load('event/add.html');
+            else if (child_menu === 'detail')
+                main_content_holder.load('event/detail.html');
+            break;
+        case 'opinion':
+            if (child_menu === 'add')
+                main_content_holder.load('event/add.html');
+            else if (child_menu === 'detail')
+                main_content_holder.load('event/detail.html');
+            break;
+        case 'business':
+            if (child_menu === 'add')
+                main_content_holder.load('event/add.html');
+            else if (child_menu === 'detail')
+                main_content_holder.load('event/detail.html');
+            break;
+        case 'aspiration':
+            main_content_holder.load('aspiration.html');
+        case 'credit':
+            main_content_holder.load('credits.html');
     }
 }
 
@@ -33,6 +61,7 @@ function onAuthChange(user) {
             if (user.photoURL){
                 $('#user_image').attr("src", user.photoURL);
             }
+            $('#main-content').load('dashboard.html');
         });
         $('.backstretch').remove();
     } else {
