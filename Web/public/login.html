@@ -95,9 +95,8 @@ MAIN CONTENT
             $('#sign_button').click();
         }
     });
-    $('#user_pass').keypress(function (e) {
-        var key = e.which;
-        if(key == 13)  // the enter key code
+    $('#user_pass').keypress(function (key) {
+        if(key.which == 13)  // the enter key code
         {
             $('#sign_button').click();
         }
