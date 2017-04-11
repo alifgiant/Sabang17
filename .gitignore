@@ -48,3 +48,5 @@ Web/.idea/
 
 # Node
 functions/node_modules/
+
+.c9/

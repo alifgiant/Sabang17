@@ -1,10 +1,10 @@
-
-<!--
-**********************************************************************************************************************************************************
-TOP BAR CONTENT & NOTIFICATIONS
-***********************************************************************************************************************************************************
--->
-<!--header start-->
+<script>
+    if (typeof $ === 'undefined') {
+        window.location.href = "index.html";
+    }
+</script>
+<!--*** TOP BAR CONTENT & NOTIFICATIONS ***-->
+<!-- header start -->
 <header class="header black-bg">
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
@@ -91,9 +91,7 @@ TOP BAR CONTENT & NOTIFICATIONS
 </header>
 <!--header end-->
 
-<!-- **********************************************************************************************************************************************************
-MAIN SIDEBAR MENU
-*********************************************************************************************************************************************************** -->
+<!-- ***MAIN SIDEBAR MENU*** -->
 <!--sidebar start-->
 <aside>
     <div id="sidebar"  class="nav-collapse ">
@@ -173,6 +171,15 @@ MAIN SIDEBAR MENU
 <section id="main-content">
 
 </section>
+<div id="loading-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="loading-modal" aria-hidden="true">
+    <div class="modal-dialog modal-sm"> 
+        <div class="modal-content"> 
+            <div class="modal-body">
+                <span class="glyphicon glyphicon-refresh spinning"></span> Uploading...
+            </div> 
+        </div>
+  </div>
+</div>
 <!--main content end-->
 <!--footer start-->
 <footer class="site-footer">
