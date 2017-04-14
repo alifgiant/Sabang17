@@ -44,7 +44,7 @@ function onDetailEventLoad(){
     });
     
     event_detail_Ref.on('child_removed', function(data) {
-        addEventToTable(data.key);
+        removeEventFromTable(data.key);
     });
 }
 
@@ -158,17 +158,18 @@ function onDetailBusinessLoad(){
     });
     
     business_detail_Ref.on('child_removed', function(data) {
-        removeCadreFromTable(data.key);
+        removeBusinessFromTable(data.key);
     });
 }
 
 function onDetailAspirationLoad(){
     var aspiration_table = $('#aspiration_detail_table');
-    function addAspirationToTable(key, message){
+    function addAspirationToTable(key, message, status, label){
         var new_element = 
         '<tr> \
             <td> ' + key + '</td> \
             <td><a href="basic_table.html#"> ' + message + '</a></td> \
+            <td><span class="label label-' + label + ' label-mini"> ' + status + '</span></td> \
             <td> \
                 <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
                 <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
@@ -192,7 +193,12 @@ function onDetailAspirationLoad(){
             keys.push(key);
         }
         
-        addAspirationToTable(data.key, data.val()[keys[keys.length-1]].text);
+        var last_message = data.val()[keys[keys.length-1]];
+        
+        var status = last_message.messageSource == 'admin' ? 'READ' : 'UNREAD';
+        var label = last_message.messageSource == 'admin' ? 'success' : 'warning';
+        
+        addAspirationToTable(data.key, last_message.text, status, label);
     });
     
     conversation_detail_Ref.on('child_changed', function(data) {
