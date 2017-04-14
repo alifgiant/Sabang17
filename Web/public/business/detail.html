@@ -27,42 +27,4 @@
             </div><!-- /col-md-12 -->
         </div><!-- /row -->
     </section><! --/wrapper -->
-    <script type="text/javascript">
-        var business_table = $('#business_detail_table');
-        function addBusinessToTable(key, name, price){
-            var new_element = 
-            '<tr> \
-                <td> ' + key + '</td> \
-                <td><a href="basic_table.html#"> ' + name + '</a></td> \
-                <td> ' + price + '</td> \
-                <td> \
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
-                </td> \
-            </tr>';
-            business_table.append(new_element);
-        }
-        
-        function changeBusinessFromTable(key, name, price){
-            
-        }
-        
-        function removeBusinessFromTable(key){
-            
-        }
-        
-        var business_detail_Ref = firebase.database().ref('business/');
-        business_detail_Ref.on('child_added', function(data) {
-            addBusinessToTable(data.key, data.val().name, data.val().price);
-        });
-        
-        business_detail_Ref.on('child_changed', function(data) {
-            changeBusinessFromTable(data.key, data.val().name, data.val().price);
-        });
-        
-        business_detail_Ref.on('child_removed', function(data) {
-            removeCadreFromTable(data.key);
-        });
-        
-    </script>
 </div>

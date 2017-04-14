@@ -26,41 +26,4 @@
             </div><!-- /col-md-12 -->
         </div><!-- /row -->
     </section><! --/wrapper -->
-    <script type="text/javascript">
-        var opinion_table = $('#opinion_detail_table');
-        function addOpinionToTable(key, title){
-            var new_element = 
-            '<tr> \
-                <td> ' + key + '</td> \
-                <td><a href="basic_table.html#"> ' + title + '</a></td> \
-                <td> \
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
-                </td> \
-            </tr>';
-            opinion_table.append(new_element);
-        }
-        
-        function changeOpinionFromTable(key, title){
-            
-        }
-        
-        function removeOpinionFromTable(key){
-            
-        }
-        
-        var opinion_detail_Ref = firebase.database().ref('opinion/');
-        opinion_detail_Ref.on('child_added', function(data) {
-            addOpinionToTable(data.key, data.val().title);
-        });
-        
-        opinion_detail_Ref.on('child_changed', function(data) {
-            changeOpinionFromTable(data.key, data.val().title);
-        });
-        
-        opinion_detail_Ref.on('child_removed', function(data) {
-            removeOpinionFromTable(data.key);
-        });
-        
-    </script>
 </div>

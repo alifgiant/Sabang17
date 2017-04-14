@@ -28,43 +28,4 @@
             </div><!-- /col-md-12 -->
         </div><!-- /row -->
     </section><! --/wrapper -->
-    <script type="text/javascript">
-        var event_table = $('#event_detail_table');
-        function addEventToTable(key, title, organizer, date){
-            var new_element = 
-            '<tr> \
-                <td> ' + key + '</td> \
-                <td><a href="basic_table.html#"> ' + title + '</a></td> \
-                <td> ' + organizer + '</td> \
-                <td> ' + date + '</td> \
-                <td> \
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
-                </td> \
-            </tr>';
-            event_table.append(new_element);
-        }
-        
-        function changeEventFromTable(key, title, organizer, date){
-            
-        }
-        
-        function removeEventFromTable(key){
-            
-        }
-        
-        var event_detail_Ref = firebase.database().ref('event/');
-        event_detail_Ref.on('child_added', function(data) {
-            addEventToTable(data.key, data.val().title, data.val().organizer, data.val().date_start);
-        });
-        
-        event_detail_Ref.on('child_changed', function(data) {
-            changeEventFromTable(data.key, data.val().title, data.val().organizer, data.val().date_start);
-        });
-        
-        event_detail_Ref.on('child_removed', function(data) {
-            addEventToTable(data.key);
-        });
-        
-    </script>
 </div>

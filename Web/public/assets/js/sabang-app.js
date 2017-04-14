@@ -10,23 +10,198 @@ function onDashBoardLoad(){
 }
 
 function onDetailEventLoad(){
+    var event_table = $('#event_detail_table');
+    function addEventToTable(key, title, organizer, date){
+        var new_element = 
+        '<tr> \
+            <td> ' + key + '</td> \
+            <td><a href="basic_table.html#"> ' + title + '</a></td> \
+            <td> ' + organizer + '</td> \
+            <td> ' + date + '</td> \
+            <td> \
+                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
+                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
+            </td> \
+        </tr>';
+        event_table.append(new_element);
+    }
     
+    function changeEventFromTable(key, title, organizer, date){
+        
+    }
+    
+    function removeEventFromTable(key){
+        
+    }
+    
+    var event_detail_Ref = firebase.database().ref('event/');
+    event_detail_Ref.on('child_added', function(data) {
+        addEventToTable(data.key, data.val().title, data.val().organizer, data.val().date_start);
+    });
+    
+    event_detail_Ref.on('child_changed', function(data) {
+        changeEventFromTable(data.key, data.val().title, data.val().organizer, data.val().date_start);
+    });
+    
+    event_detail_Ref.on('child_removed', function(data) {
+        addEventToTable(data.key);
+    });
 }
 
 function onDetailCadreLoad(){
+    var cadre_table = $('#cadre_detail_table');
+    function addCadreToTable(key, title, organizer, date){
+        var new_element = 
+        '<tr> \
+            <td> ' + key + '</td> \
+            <td><a href="basic_table.html#"> ' + title + '</a></td> \
+            <td> ' + organizer + '</td> \
+            <td> ' + date + '</td> \
+            <td> \
+                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
+                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
+            </td> \
+        </tr>';
+        cadre_table.append(new_element);
+    }
     
+    function changeCadreFromTable(key, title, organizer, date){
+        
+    }
+    
+    function removeCadreFromTable(key){
+        
+    }
+    
+    var cadre_detail_Ref = firebase.database().ref('cadre/');
+    cadre_detail_Ref.on('child_added', function(data) {
+        addCadreToTable(data.key, data.val().title, data.val().organizer, data.val().date_start);
+    });
+    
+    cadre_detail_Ref.on('child_changed', function(data) {
+        changeCadreFromTable(data.key, data.val().title, data.val().organizer, data.val().date_start);
+    });
+    
+    cadre_detail_Ref.on('child_removed', function(data) {
+        removeCadreFromTable(data.key);
+    });
 }
 
 function onDetailOpinionLoad(){
+    var opinion_table = $('#opinion_detail_table');
+    function addOpinionToTable(key, title){
+        var new_element = 
+        '<tr> \
+            <td> ' + key + '</td> \
+            <td><a href="basic_table.html#"> ' + title + '</a></td> \
+            <td> \
+                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
+                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
+            </td> \
+        </tr>';
+        opinion_table.append(new_element);
+    }
     
+    function changeOpinionFromTable(key, title){
+        
+    }
+    
+    function removeOpinionFromTable(key){
+        
+    }
+    
+    var opinion_detail_Ref = firebase.database().ref('opinion/');
+    opinion_detail_Ref.on('child_added', function(data) {
+        addOpinionToTable(data.key, data.val().title);
+    });
+    
+    opinion_detail_Ref.on('child_changed', function(data) {
+        changeOpinionFromTable(data.key, data.val().title);
+    });
+    
+    opinion_detail_Ref.on('child_removed', function(data) {
+        removeOpinionFromTable(data.key);
+    });
 }
 
 function onDetailBusinessLoad(){
+    var business_table = $('#business_detail_table');
+    function addBusinessToTable(key, name, price){
+        var new_element = 
+        '<tr> \
+            <td> ' + key + '</td> \
+            <td><a href="basic_table.html#"> ' + name + '</a></td> \
+            <td> ' + price + '</td> \
+            <td> \
+                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
+                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
+            </td> \
+        </tr>';
+        business_table.append(new_element);
+    }
     
+    function changeBusinessFromTable(key, name, price){
+        
+    }
+    
+    function removeBusinessFromTable(key){
+        
+    }
+    
+    var business_detail_Ref = firebase.database().ref('business/');
+    business_detail_Ref.on('child_added', function(data) {
+        addBusinessToTable(data.key, data.val().name, data.val().price);
+    });
+    
+    business_detail_Ref.on('child_changed', function(data) {
+        changeBusinessFromTable(data.key, data.val().name, data.val().price);
+    });
+    
+    business_detail_Ref.on('child_removed', function(data) {
+        removeCadreFromTable(data.key);
+    });
 }
 
 function onDetailAspirationLoad(){
+    var aspiration_table = $('#aspiration_detail_table');
+    function addAspirationToTable(key, message){
+        var new_element = 
+        '<tr> \
+            <td> ' + key + '</td> \
+            <td><a href="basic_table.html#"> ' + message + '</a></td> \
+            <td> \
+                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button> \
+                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button> \
+            </td> \
+        </tr>';
+        aspiration_table.append(new_element);
+    }
     
+    function changeAspirationFromTable(key, message){
+        
+    }
+    
+    function removeAspirationFromTable(key){
+        
+    }
+    
+    var conversation_detail_Ref = firebase.database().ref('conversation/');
+    conversation_detail_Ref.on('child_added', function(data) {
+        var keys = []
+        for (var key in data.val()){
+            keys.push(key);
+        }
+        
+        addAspirationToTable(data.key, data.val()[keys[keys.length-1]].text);
+    });
+    
+    conversation_detail_Ref.on('child_changed', function(data) {
+        changeAspirationFromTable(data.key, data.val().text);
+    });
+    
+    conversation_detail_Ref.on('child_removed', function(data) {
+        removeAspirationFromTable(data.key);
+    });
 }
 
 function hideOther(){
