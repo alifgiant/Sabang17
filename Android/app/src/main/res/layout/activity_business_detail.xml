@@ -12,7 +12,7 @@
             android:contentDescription="@string/info_image"
             android:src="@drawable/hmi_logo"
             android:layout_width="match_parent"
-            android:layout_height="450dp" />
+            android:layout_height="400dp" />
         <TextView
             android:id="@+id/item_name"
             android:paddingTop="6dp"
@@ -47,7 +47,6 @@
             style="@style/AlertDialog.AppCompat.Light"
             android:autoLink="all"
             android:text="@string/app_name"
-            android:maxLines="2"
             android:ellipsize="end"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

@@ -16,8 +16,9 @@
         <ImageView
             android:layout_marginTop="12dp"
             android:contentDescription="@string/hmi_logo"
-            android:src="@drawable/hmi_logo"
+            android:src="@mipmap/ic_launcher_hmi"
             android:layout_width="match_parent"
+            android:padding="12dp"
             android:layout_height="150dp" />
         <TextView
             android:layout_marginTop="12dp"
@@ -47,7 +48,6 @@
         <TextView
             android:text="@string/person_contact"
             android:autoLink="phone"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

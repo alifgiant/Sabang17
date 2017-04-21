@@ -12,7 +12,8 @@ public class SabangEvent extends Info {
         // Default constructor required for calls to DataSnapshot.getValue(SabangEvent.class)
     }
 
-    public SabangEvent(String title, String date_start, String date_end, String desc, String organizer, String time_start, String time_end) {
+    public SabangEvent(String title, String date_start, String date_end, String desc,
+                       String organizer, String time_start, String time_end) {
         super(title, date_start, date_end, desc, organizer, time_start, time_end);
     }
 

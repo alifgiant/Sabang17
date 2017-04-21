@@ -194,8 +194,9 @@ public class CriticFragment extends Fragment {
                     moveIntent.putExtra(CONVERSATION_KEY, data.key);
                     moveIntent.putExtra(CONVERSATION_NAME_KEY, data.name);
                     moveIntent.putExtra(CONVERSATION_ORIGIN_KEY, data.origin);
+                    Log.i(TAG, "onClick: click bisnis");
                     // cancel first
-//                    startActivity(moveIntent);
+                    startActivity(moveIntent);
                 }
             });
         }

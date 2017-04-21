@@ -27,6 +27,7 @@
     <string name="critic_field_empty">Kolom tidak boleh kosong</string>
 
     <!--SCHEDULE PAGE-->
+    <string name="all_day">All Day</string>
     <string name="month">Bulan</string>
     <string name="event_list">Daftar Jadwal</string>
 
@@ -42,7 +43,7 @@
     <string name="salute">Hormat Kami,</string>
     <string name="person_in_charge">Aidil Afdan Pananrang</string>
     <string name="person_department">Ketua Bidang Litbang HMI Cabang Bandung</string>
-    <string name="person_contact">+62&#211;812&#211;2371&#211;8060</string>
+    <string name="person_contact">+6281223718060</string>
     <string name="partner">Berkolaborasi dengan,</string>
     <string name="further_info">Jika anda ingin info kegiatan, info perkaderan, ataupun info kewirausahaan
         komisariat anda dicantumkan dalam aplikasi ini, silahkan kirimkan via email ke aplikasisabang17@gmail.com</string>

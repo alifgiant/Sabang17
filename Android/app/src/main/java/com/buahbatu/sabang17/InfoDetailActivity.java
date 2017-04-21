@@ -1,5 +1,7 @@
 package com.buahbatu.sabang17;
 
+import android.graphics.drawable.Drawable;
+import android.support.graphics.drawable.VectorDrawableCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,7 +35,7 @@ public class InfoDetailActivity extends AppCompatActivity {
         mItemTitle.setText(data.title);
         mItemOrganizer.setText(data.organizer);
         if (!TextUtils.isEmpty(data.date_start)){
-            String date = data.date_start;
+            String date = "Tanggal: " + data.date_start;
             if (!TextUtils.isEmpty(data.date_end)){
                 date += " s.d " + data.date_end;
             }
@@ -42,7 +44,7 @@ public class InfoDetailActivity extends AppCompatActivity {
             mItemDate.setVisibility(View.GONE);
         }
         if (!TextUtils.isEmpty(data.time_start)){
-            String time = data.time_start;
+            String time = "Pukul: " + data.time_start;
             if (!TextUtils.isEmpty(data.time_end)){
                 time += " s.d " + data.time_end;
             }
@@ -56,11 +58,13 @@ public class InfoDetailActivity extends AppCompatActivity {
         StorageReference storageReference = FirebaseStorage.getInstance().getReference(infoType)
                 .child(data.key + ".png");
 
+        Drawable placeholder = VectorDrawableCompat.create(getResources(), R.drawable.ic_no_image_grey_24dp, null);
+
         // Load the image using Glide
         Glide.with(getApplicationContext())
                 .using(new CustomFirebaseImageLoader())
                 .load(storageReference)
-                .placeholder(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_no_image_grey_24dp))
+                .placeholder(placeholder)
                 .listener(new RequestListener<StorageReference, GlideDrawable>() {
                     @Override
                     public boolean onException(Exception e, StorageReference model, Target<GlideDrawable> target, boolean isFirstResource) {

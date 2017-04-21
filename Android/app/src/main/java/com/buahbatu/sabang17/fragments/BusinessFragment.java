@@ -1,7 +1,9 @@
 package com.buahbatu.sabang17.fragments;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.graphics.drawable.VectorDrawableCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
@@ -162,11 +164,13 @@ public class BusinessFragment extends Fragment {
             StorageReference storageReference = FirebaseStorage.getInstance().getReference(getString(R.string.business_key))
                     .child(data.key + ".png");
 
+            Drawable placeholder = VectorDrawableCompat.create(getResources(), R.drawable.ic_no_image_grey_24dp, null);
+
             // Load the image using Glide
             Glide.with(getContext())
                     .using(new CustomFirebaseImageLoader())
                     .load(storageReference)
-                    .placeholder(ContextCompat.getDrawable(getContext(), R.drawable.ic_no_image_grey_24dp))
+                    .placeholder(placeholder)
                     .listener(new RequestListener<StorageReference, GlideDrawable>() {
                         @Override
                         public boolean onException(Exception e, StorageReference model, Target<GlideDrawable> target, boolean isFirstResource) {

@@ -57,7 +57,6 @@ public class TimeFragment extends Fragment {
             List<Event> calendarEvents = mCalendarView.getEvents(selectedDate);
             for (Event event:calendarEvents) {
                 addTodayEvent(event);
-//                Log.i(TAG, "onDayClick: "+ ((SabangEvent)event.getData()).eventType);
             }
         }
 
@@ -257,8 +256,22 @@ public class TimeFragment extends Fragment {
         @Override
         public void onBindViewHolder(TimeViewHolder holder, int position) {
             final SabangEvent event = dayEventList.get(position);
-            String time = event.time_start;
-            if (!TextUtils.isEmpty(event.time_end)) time += " - " + event.time_end;
+            String selectedDateString = dateFormatFireBase.format(selectedDate);
+
+            String time = "-";
+            if (TextUtils.equals(event.date_start, selectedDateString)) {
+                time = event.time_start;
+            } else if(TextUtils.equals(event.date_end, selectedDateString)) {
+                if (!TextUtils.isEmpty(event.time_end)) time = event.time_end;
+            } else if(TextUtils.equals(event.time_start, event.time_end)){
+                time = event.time_start;
+                if (!TextUtils.isEmpty(event.time_end)) time += " - " + event.time_end;
+            } else{
+                time = getContext().getString(R.string.all_day);
+            }
+
+            Log.i(TAG, "onBindViewHolder: " + event.time_end);
+
 
             holder.itemTime.setText(time);
             holder.itemTitle.setText(event.title);

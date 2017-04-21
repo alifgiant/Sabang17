@@ -1,9 +1,13 @@
 package com.buahbatu.sabang17.fragments;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.graphics.drawable.VectorDrawableCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -56,7 +60,7 @@ public class InfoChildFragment extends Fragment {
 
                 // input new message
                 Info info = Info.createInfoObject(dataSnapshot);
-                infoList.add(info);
+                infoList.add(0, info);
 
                 // notify data
                 mInfoRecycler.getAdapter().notifyDataSetChanged();
@@ -205,11 +209,13 @@ public class InfoChildFragment extends Fragment {
             StorageReference storageReference = FirebaseStorage.getInstance().getReference(infoType)
                     .child(data.key + ".png");
 
+            Drawable placeholder = VectorDrawableCompat.create(getResources(), R.drawable.ic_no_image_grey_24dp, null);
+
             // Load the image using Glide
             Glide.with(getContext())
                     .using(new CustomFirebaseImageLoader())
                     .load(storageReference)
-                    .placeholder(ContextCompat.getDrawable(getContext(), R.drawable.ic_no_image_grey_24dp))
+                    .placeholder(placeholder)
                     .listener(new RequestListener<StorageReference, GlideDrawable>() {
                         @Override
                         public boolean onException(Exception e, StorageReference model, Target<GlideDrawable> target, boolean isFirstResource) {
