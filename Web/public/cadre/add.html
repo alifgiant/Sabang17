@@ -1,212 +1,202 @@
-<script>
-    if (typeof $ === 'undefined') {
-        window.location.href = "index.html";
-    }
-</script>
-<section class="wrapper">
-    <h3><i class="fa fa-angle-right"></i> Form Components</h3>
-
-    <!-- BASIC FORM ELELEMNTS -->
-    <div class="row mt">
-        <div class="col-lg-12">
-            <div class="form-panel">
-                <h4 class="mb"><i class="fa fa-angle-right"></i> Form Elements</h4>
-                <form class="form-horizontal style-form" method="get">
-                    <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Default</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control">
+<div id='cadre_add' class="wrapper">
+    <script>
+        if (typeof $ === 'undefined') {
+            window.location.href = "index.html";
+        }
+    </script>
+    <section >
+        <!-- BASIC FORM ELELEMNTS -->
+        <div class="row mt">
+            <div class="col-lg-12">
+                <div class="form-panel">
+                    <h4 class="mb"><i class="fa fa-angle-right"></i> Tambah Kaderisasi</h4>
+                    <form class="form-horizontal style-form" method="post" name="cadreForm">
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 col-sm-2 control-label"> Judul Acara</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="cadre_title"  class="form-control has-error" placeholder="Syuro Akbar HMI Bandung">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Help text</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control">
-                            <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                        <div class="form-group">
+                            <label for="organizer" class="col-sm-2 col-sm-2 control-label"> Penyelenggara</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="cadre_organizer"  class="form-control" placeholder="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Rounder</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control round-form">
+                        <div class="form-group">
+                            <label for="desc" class="col-sm-2 col-sm-2 control-label"> Keterangan</label>
+                            <div class="col-sm-10">
+                                <textarea name="text" id="cadre_desc"  class="form-control" placeholder=""></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Input focus</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" id="focusedInput" type="text" value="This is focused...">
+                        <div class="form-group">
+                            <label for="time_start" class="col-sm-2 col-sm-2 control-label"> Waktu mulai</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="cadre_time_start"  class="form-control" placeholder="23:59">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Disabled</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+                        <div class="form-group">
+                            <label for="time_end" class="col-sm-2 col-sm-2 control-label"> Waktu selesai (optional)</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="cadre_time_end"  class="form-control" placeholder="23:59">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Placeholder</label>
-                        <div class="col-sm-10">
-                            <input type="text"  class="form-control" placeholder="placeholder">
+                        <div class="form-group">
+                            <label for="date_start" class="col-sm-2 col-sm-2 control-label"> Tanggal Mulai</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="cadre_date_start"  class="form-control" placeholder="dd-mm-yyyy">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password"  class="form-control" placeholder="">
+                        <div class="form-group">
+                            <label for="date_end" class="col-sm-2 col-sm-2 control-label"> Tanggal Selesai (optional)</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="cadre_date_end" class="form-control" placeholder="dd-mm-yyyy">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-lg-2 col-sm-2 control-label">Static control</label>
-                        <div class="col-lg-10">
-                            <p class="form-control-static">email@example.com</p>
+                        <div class="form-group">
+                            <label for="foto" class="col-sm-2 col-sm-2 control-label"> Foto (optional, hanya bisa .png)</label>
+                            <div class="col-sm-10">
+                                <input type="file" value="upload" id="cadre_image" class="form-control">
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-        </div><!-- col-lg-12-->
-    </div><!-- /row -->
-
-    <!-- INLINE FORM ELELEMNTS -->
-    <div class="row mt">
-        <div class="col-lg-12">
-            <div class="form-panel">
-                <h4 class="mb"><i class="fa fa-angle-right"></i> Inline Form</h4>
-                <form class="form-inline" role="form">
-                    <div class="form-group">
-                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" for="exampleInputPassword2">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-theme">Sign in</button>
-                </form>
-            </div><!-- /form-panel -->
-        </div><!-- /col-lg-12 -->
-    </div><!-- /row -->
-
-    <!-- INPUT MESSAGES -->
-    <div class="row mt">
-        <div class="col-lg-12">
-            <div class="form-panel">
-                <h4 class="mb"><i class="fa fa-angle-right"></i> Input Messages</h4>
-                <form class="form-horizontal tasi-form" method="get">
-                    <div class="form-group has-success">
-                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Input with success</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="inputSuccess">
-                        </div>
-                    </div>
-                    <div class="form-group has-warning">
-                        <label class="col-sm-2 control-label col-lg-2" for="inputWarning">Input with warning</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="inputWarning">
-                        </div>
-                    </div>
-                    <div class="form-group has-error">
-                        <label class="col-sm-2 control-label col-lg-2" for="inputError">Input with error</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="inputError">
-                        </div>
-                    </div>
-                </form>
-            </div><!-- /form-panel -->
-        </div><!-- /col-lg-12 -->
-    </div><!-- /row -->
-
-    <!-- INPUT MESSAGES -->
-    <div class="row mt">
-        <div class="col-lg-12">
-            <div class="form-panel">
-                <h4 class="mb"><i class="fa fa-angle-right"></i> Checkboxes, Radios & Selects</h4>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="">
-                        Option one is this and that&mdash;be sure to include why it's great
-                    </label>
+                        <a id="cadre_submit" class="btn btn-primary">Submit</a>  
+                    </form>
                 </div>
+            </div><!-- col-lg-12-->
+        </div><!-- /row -->
+    </section>
+    <script type="text/javascript">
+        // input vaidations
+        function iscadreInputValid(title_text, organizer_text, 
+            desc_text, time_start_text, time_end_text, date_start_text, date_end_text, image_input){
+            var time_regex = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
+            var date_regex = /^(0?[1-9]|[12][0-9]|3[01])\-(0[1-9]|1[012])\-\d{4}$/;
+            
+            title_text.parent().parent().removeClass('has-error');
+            organizer_text.parent().parent().removeClass('has-error');
+            desc_text.parent().parent().removeClass('has-error')
+            time_start_text.parent().parent().removeClass('has-error')
+            time_end_text.parent().parent().removeClass('has-error')
+            date_start_text.parent().parent().removeClass('has-error')
+            date_end_text.parent().parent().removeClass('has-error')
+            
+            if (title_text.val().length === 0){
+                title_text.parent().parent().addClass('has-error');
+                $(window).scrollTop(title_text.offset().top - 100);
+                title_text.focus();
+            }else if (organizer_text.val().length === 0){
+                organizer_text.parent().parent().addClass('has-error');
+                $(window).scrollTop(organizer_text.offset().top - 100);
+                organizer_text.focus();
+            }else if (desc_text.val().length === 0){
+                desc_text.parent().parent().addClass('has-error');
+                $(window).scrollTop(desc_text.offset().top - 100);
+                desc_text.focus();
+            }else if (time_start_text.val().length === 0 || !time_regex.test(time_start_text.val())){
+                time_start_text.parent().parent().addClass('has-error');
+                $(window).scrollTop(time_start_text.offset().top - 100);
+                time_start_text.focus();
+            }else if (time_end_text.val().length !== 0 && !time_regex.test(time_end_text.val())){
+                time_end_text.parent().parent().addClass('has-error');
+                $(window).scrollTop(time_end_text.offset().top - 100);
+                time_end_text.focus();
+            }else if (date_start_text.val().length === 0 || !date_regex.test(date_start_text.val())){
+                date_start_text.parent().parent().addClass('has-error');
+                $(window).scrollTop(date_start_text.offset().top - 100);
+                date_start_text.focus();
+            }else if (date_end_text.val().length !== 0 && !date_regex.test(date_end_text.val())){
+                date_end_text.parent().parent().addClass('has-error');
+                $(window).scrollTop(date_end_text.offset().top - 100);
+                date_end_text.focus();
+            }else if(image_input.prop('files').length > 0 && image_input.prop('files')[0].type != 'image/png'){
+                image_input.parent().parent().addClass('has-error');
+                $(window).scrollTop(image_input.offset().top - 100);
+                image_input.focus();
+            }
+            else{
+                return true;
+            }
+            return false;
+        }
+        
+        function storecadre(title, organizer, desc, time_start, time_end, date_start, date_end, image_file, onFinish){
+            // Get a reference to the database service
+            var database_cadre = firebase.database().ref('cadre');
+            var database_calendar = firebase.database().ref('calendar');
+            // Get a reference to the storage
+            var storageRef = firebase.storage().ref('cadre');
 
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                        Option one is this and that&mdash;be sure to include why it's great
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                        Option two can be something else and selecting it will deselect option one
-                    </label>
-                </div>
-
-                <hr>
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-                </label>
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-                </label>
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-                </label>
-
-                <hr>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-                <br>
-                <select multiple class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div><!-- /form-panel -->
-        </div><!-- /col-lg-12 -->
-
-        <!-- CUSTOM TOGGLES -->
-        <div class="col-lg-12">
-            <div class="form-panel">
-                <h4 class="mb"><i class="fa fa-angle-right"></i> Custom Toggles</h4>
-                <div class="row mt">
-                    <div class="col-sm-6 text-center">
-                        <input type="checkbox" checked="" data-toggle="switch" />
-                    </div>
-                    <div class="col-sm-6 text-center">
-                        <input type="checkbox" data-toggle="switch" />
-                    </div>
-                </div>
-                <div class="row mt">
-                    <div class="col-sm-6 text-center">
-                        <div class="switch switch-square"
-                             data-on-label="<i class=' fa fa-check'></i>"
-                             data-off-label="<i class='fa fa-times'></i>">
-                            <input type="checkbox" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6 text-center">
-                        <div class="switch switch-square"
-                             data-on-label="<i class=' fa fa-check'></i>"
-                             data-off-label="<i class='fa fa-times'></i>">
-                            <input type="checkbox" checked="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt">
-                    <div class="col-sm-6 text-center">
-                        <input type="checkbox" disabled data-toggle="switch" />
-                    </div>
-                    <div class="col-sm-6 text-center">
-                        <input type="checkbox" checked disabled data-toggle="switch" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--row -->
-</section><!--wrapper -->
+            // new data
+            var new_data = {
+                title: title,
+                organizer: organizer,
+                desc: desc,
+                time_start: time_start,
+                time_end: time_end,
+                date_start: date_start,
+                date_end: date_end
+            }
+            
+            var month_start = parseInt(date_start.split('-')[1]);
+            var month_end = date_end ? parseInt(date_end.split('-')[1]) : month_start;
+            
+            var new_cadre = database_cadre.push(new_data);
+            // new_cadre.set(new_data);
+            
+            for(var i = 0; i <= month_end - month_start; i++){
+                var mon = ("0" + (month_start+i)).slice(-2);
+                database_calendar.child(mon).child('cadre_'+ new_cadre.key).set(new_data);
+            }
+            
+            if (image_file){
+                storageRef.child(new_cadre.key + '.png').put(image_file).then(onFinish);
+            }else{
+                onFinish();
+            }
+        }
+        
+        // save cadre
+        $('#cadre_submit').click(function(){
+            var title_text = $('#cadre_title');
+            var organizer_text = $('#cadre_organizer');
+            var desc_text = $('#cadre_desc');
+            var time_start_text = $('#cadre_time_start');
+            var time_end_text = $('#cadre_time_end');
+            var date_start_text = $('#cadre_date_start');
+            var date_end_text = $('#cadre_date_end');
+            var image_input = $('#cadre_image');
+            
+            var isInputValid = iscadreInputValid(title_text, organizer_text, desc_text, time_start_text,
+                time_end_text, date_start_text, date_end_text, image_input);
+            
+            // console.log('image-input', image_input);
+            // console.log('image-input.type', image_input[0].type == 'image/png');
+            
+            if (isInputValid){
+                var loading_modal = $('#loading-modal');
+                loading_modal.modal({
+                    backdrop: 'static',
+                    keyboard: false
+                });
+                
+                storecadre(title_text.val(), organizer_text.val(), desc_text.val(), time_start_text.val()
+                    , time_end_text.val(), date_start_text.val(), date_end_text.val(), image_input.prop('files')[0],
+                    function(){
+                        // saving complete
+                        loading_modal.modal('hide');
+                        
+                        //empty field
+                        title_text.val("");
+                        organizer_text.val("");
+                        desc_text.val("");
+                        time_start_text.val("");
+                        time_end_text.val("");
+                        date_start_text.val("");
+                        date_end_text.val("");
+                        image_input.val("");
+                        image_input.replaceWith( image_input = image_input.clone() );
+                    });
+            }
+        });
+    </script>
+</div>
